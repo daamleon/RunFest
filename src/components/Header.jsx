@@ -15,13 +15,22 @@ function Header({ isOpen, setIsOpen }) {
         <Menu size={24} />
       </button>
       <nav className="hidden md:flex md:space-x-4">
-        <a href="#" className="p-2 hover:bg-gray-700">
+        <a
+          href="#"
+          className="p-2 hover:bg-orange-500 text-orange-600 hover:text-white"
+        >
           About
         </a>
-        <a href="#" className="p-2 hover:bg-gray-700">
+        <a
+          href="#"
+          className="p-2 hover:bg-orange-500 text-orange-600 hover:text-white"
+        >
           Services
         </a>
-        <a href="#" className="p-2 hover:bg-gray-700">
+        <a
+          href="#"
+          className="p-2 hover:bg-orange-500 text-orange-600 hover:text-white"
+        >
           Contact
         </a>
       </nav>
