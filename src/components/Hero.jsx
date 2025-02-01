@@ -1,6 +1,7 @@
 import bannerImg from "../assets/running.jpg";
 
-function Hero() {
+function Hero({ handleShowEmbed }) {
+  // 🔥 Terima fungsi dari App.jsx
   return (
     <section
       className="text-center bg-cover bg-center bg-no-repeat"
@@ -20,7 +21,10 @@ function Hero() {
             Challenge yourself and be part of the biggest running event of the
             year.
           </p>
-          <button className="mt-4 px-6 py-3 bg-orange-600 text-white md:text-lg rounded-lg hover:bg-orange-700">
+          <button
+            onClick={handleShowEmbed} // 🔥 Panggil fungsi untuk menampilkan embed & scroll
+            className="mt-4 px-6 py-3 bg-orange-600 text-white md:text-lg rounded-lg hover:bg-orange-700"
+          >
             Join Event
           </button>
         </div>
